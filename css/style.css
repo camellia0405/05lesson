@@ -1,0 +1,173 @@
+/*ヘッダー*/
+header,.main_contents_top,
+.main_contents_middle,
+.main_contents_bottom,
+.cardbox,
+footer{
+    width: 100%; max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*ヘッダーの画像*/
+.top_img{
+    background-image: url(../img/bgimg.jpg);
+    padding: 15px;
+}
+
+/*ヘッダーのテキスト共通*/
+.top_img_text1-right,.top_img_text2-right{
+    color: #fff;
+    text-align: right;
+}
+
+/*一番上のコンテンツ画像*/
+.main_contents_top_img{
+    background-image: url(../img/bgimg2.jpg);
+    padding: 15px; 
+}
+
+/*一番上のコンテンツ　テキスト*/
+.main_contnts_top_text{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    padding: 10px;
+}
+.main_contnts_top_text-left{
+    color: #FFF;
+    text-align: justify;
+}
+
+/*2番目のコンテンツ 画像とテキスト*/
+.main_contents_middle_wrapper{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+}
+
+/*2番目のコンテンツ画像*/
+.main_contents_middle_wrapper_img-center,
+.main_contents_middle_wrapper_img-center-siz50{
+    width: 100%;
+    vertical-align:top;
+}
+
+/*2番目のコンテンツテキスト*/
+.main_contents_middle_wrapper_text-center{
+    width: 100%;
+    margin: 10px;
+}
+
+/*3番目コンテンツ*/
+.main_contents_bottom{
+    width: 100%;
+    display: flex;
+
+}
+
+/*3番目のコンテンツ画像*/
+
+.main_contents_bottom_img{
+    width: 100%;
+}
+.main_contents_bottom_img-siz50{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    vertical-align:top;
+    margin-top: 10px;
+}
+
+.main_contents_bottom_text{
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+/*カードコンテンツタイトル*/
+.title{
+    text-align: center;
+}
+
+/*カード*/
+.cardbox-center{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardbox-center2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 30%;
+}
+
+/*カード画像*/
+
+.card_img-size{
+    width: 100%;
+    height: 250PX;
+    object-fit: cover;
+}
+
+/*カードテキスト*/
+.card_title{
+    text-align: center;
+}
+.card_text{
+    width: 100%;
+    padding: 5px;
+    text-align: justify;
+}
+
+/*フッターメニュー*/
+
+footer{
+    height: 100px;
+    margin-top: 20px;
+}
+
+.menu{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu{
+    list-style-position: inside;
+	list-style-image: url(../img/icon.png);
+}
+
+@media screen and (max-width: 480px) {
+    /* 480pxまでの幅の場合に適応される */
+    .cardbox-center,
+    .main_contents_middle_wrapper,
+    .main_contents_bottom{
+        width: 100%;
+        display: block;
+    }
+    .main_contnts_top_text{
+        width: 100%;
+        border-radius: 0;
+        padding: 5px;
+    }
+    .card{
+        width: 100%;
+    }
+
+    .menu{
+        list-style: none;
+    }
+    li a{
+        font-size: 10px;
+    }
+
+
+    }
+
